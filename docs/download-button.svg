@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="90" height="30" viewBox="0 0 90 30" font-family="Segoe UI, Arial, sans-serif">
+  <defs>
+    <linearGradient id="btn" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#5DA9FF"/>
+      <stop offset="0.5" stop-color="#2F7DE1"/>
+      <stop offset="1" stop-color="#1B5FC1"/>
+    </linearGradient>
+    <linearGradient id="btnShine" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0.45"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <rect x="0.5" y="0.5" width="89" height="29" rx="8" fill="url(#btn)" stroke="#0F3D7A"/>
+  <rect x="2" y="2" width="86" height="12" rx="6" fill="url(#btnShine)"/>
+  <text x="37" y="20" font-size="10.5" font-weight="700" fill="#FFFFFF" text-anchor="middle" letter-spacing="0.4">DOWNLOAD</text>
+  <path d="M76 8.5 v8 M72.8 13 l3.2 4.2 3.2-4.2" stroke="#FFFFFF" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
