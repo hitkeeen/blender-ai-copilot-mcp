@@ -1,0 +1,106 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="620" viewBox="0 0 960 620" font-family="Segoe UI, Arial, sans-serif">
+  <defs>
+    <marker id="arrowSky" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto">
+      <path d="M0 0 L9 4.5 L0 9 Z" fill="#38BDF8"/>
+    </marker>
+    <marker id="arrowOrange" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto">
+      <path d="M0 0 L9 4.5 L0 9 Z" fill="#F0862B"/>
+    </marker>
+    <marker id="arrowViolet" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto">
+      <path d="M0 0 L9 4.5 L0 9 Z" fill="#8B5CF6"/>
+    </marker>
+  </defs>
+
+  <rect width="960" height="620" fill="#0B1220"/>
+  <text x="480" y="38" text-anchor="middle" font-size="19" font-weight="700" fill="#E8EAF2">blender-ai-copilot-mcp — Architecture</text>
+  <text x="480" y="58" text-anchor="middle" font-size="12" fill="#9AA4BF">One add-on core: conversation, scene tools and an MCP endpoint over the same Blender session</text>
+
+  <!-- Artist -->
+  <rect x="80" y="78" width="200" height="58" rx="10" fill="#14203C" stroke="#38BDF8" stroke-width="1.5"/>
+  <text x="180" y="102" text-anchor="middle" font-size="13" font-weight="700" fill="#E8EAF2">Artist</text>
+  <text x="180" y="120" text-anchor="middle" font-size="11" fill="#9AA4BF">Blender user</text>
+
+  <!-- Blender container -->
+  <rect x="60" y="190" width="540" height="330" rx="12" fill="#0F1830" stroke="#8B5CF6" stroke-width="1.5"/>
+  <text x="84" y="216" font-size="13" font-weight="700" fill="#C4A9FF">Blender 4.2+ (Windows x64)</text>
+
+  <!-- Add-on Core -->
+  <rect x="84" y="230" width="492" height="266" rx="10" fill="#101C33" stroke="#2A3C66"/>
+  <text x="104" y="254" font-size="12" font-weight="700" fill="#E8EAF2">Add-on Core — blender-ai-copilot-mcp</text>
+
+  <rect x="104" y="268" width="220" height="86" rx="8" fill="#14203C" stroke="#38BDF8"/>
+  <text x="214" y="292" text-anchor="middle" font-size="12" font-weight="700" fill="#E8EAF2">Chat Panel &amp;</text>
+  <text x="214" y="308" text-anchor="middle" font-size="12" font-weight="700" fill="#E8EAF2">Studio Window</text>
+  <text x="214" y="330" text-anchor="middle" font-size="10" fill="#9AA4BF">chat · task board · snapshots</text>
+
+  <rect x="348" y="268" width="220" height="86" rx="8" fill="#14203C" stroke="#F0862B"/>
+  <text x="458" y="292" text-anchor="middle" font-size="12" font-weight="700" fill="#E8EAF2">21 Scene Tools</text>
+  <text x="458" y="312" text-anchor="middle" font-size="10" fill="#9AA4BF">create · edit · inspect</text>
+  <text x="458" y="328" text-anchor="middle" font-size="10" fill="#9AA4BF">capture · search · export</text>
+
+  <rect x="104" y="378" width="220" height="86" rx="8" fill="#14203C" stroke="#98D85B"/>
+  <text x="214" y="402" text-anchor="middle" font-size="12" font-weight="700" fill="#E8EAF2">Approvals &amp; Named Undo</text>
+  <text x="214" y="424" text-anchor="middle" font-size="10" fill="#9AA4BF">confirm · cancel after step</text>
+  <text x="214" y="440" text-anchor="middle" font-size="10" fill="#9AA4BF">roll back every mutation</text>
+
+  <rect x="348" y="378" width="220" height="86" rx="8" fill="#14203C" stroke="#8B5CF6"/>
+  <text x="458" y="402" text-anchor="middle" font-size="12" font-weight="700" fill="#E8EAF2">Scene Context (bpy API)</text>
+  <text x="458" y="424" text-anchor="middle" font-size="10" fill="#9AA4BF">objects · materials · modifiers</text>
+  <text x="458" y="440" text-anchor="middle" font-size="10" fill="#9AA4BF">viewport screenshots</text>
+
+  <!-- AI Providers -->
+  <rect x="680" y="120" width="230" height="196" rx="10" fill="#14203C" stroke="#F0862B" stroke-width="1.5"/>
+  <text x="795" y="146" text-anchor="middle" font-size="13" font-weight="700" fill="#E8EAF2">AI Providers</text>
+  <g font-size="11" fill="#C7D2EA">
+    <text x="700" y="172">&#8226; OpenAI</text>
+    <text x="700" y="192">&#8226; Anthropic Claude</text>
+    <text x="700" y="212">&#8226; Google Gemini</text>
+    <text x="700" y="232">&#8226; OpenRouter</text>
+    <text x="700" y="252">&#8226; OpenCode Zen</text>
+    <text x="700" y="272">&#8226; Ollama (local models)</text>
+    <text x="700" y="296" fill="#9AA4BF">+ custom OpenAI / Anthropic /</text>
+    <text x="700" y="310" fill="#9AA4BF">&#160;&#160;Ollama-compatible endpoints</text>
+  </g>
+
+  <!-- MCP Server -->
+  <rect x="680" y="356" width="230" height="66" rx="10" fill="#14203C" stroke="#38BDF8" stroke-width="1.5"/>
+  <text x="795" y="382" text-anchor="middle" font-size="12" font-weight="700" fill="#E8EAF2">Built-in MCP Server</text>
+  <text x="795" y="402" text-anchor="middle" font-size="10" fill="#9AA4BF">authenticated Streamable HTTP</text>
+
+  <!-- External client -->
+  <rect x="680" y="472" width="230" height="58" rx="10" fill="#14203C" stroke="#98D85B" stroke-width="1.5"/>
+  <text x="795" y="496" text-anchor="middle" font-size="12" font-weight="700" fill="#E8EAF2">OpenCode</text>
+  <text x="795" y="514" text-anchor="middle" font-size="10" fill="#9AA4BF">external MCP client</text>
+
+  <!-- Asset integrations -->
+  <rect x="60" y="548" width="540" height="52" rx="10" fill="#14203C" stroke="#F0862B" stroke-width="1.5"/>
+  <text x="330" y="571" text-anchor="middle" font-size="12" font-weight="700" fill="#E8EAF2">Asset Integrations</text>
+  <text x="330" y="589" text-anchor="middle" font-size="10" fill="#9AA4BF">Poly Haven · Sketchfab · Poly Pizza</text>
+
+  <!-- Arrows -->
+  <!-- Artist -> Blender -->
+  <line x1="180" y1="136" x2="180" y2="182" stroke="#38BDF8" stroke-width="2" marker-end="url(#arrowSky)"/>
+  <text x="196" y="164" font-size="11" fill="#9AA4BF">prompts &amp; approvals</text>
+
+  <!-- Core -> Providers -->
+  <line x1="576" y1="292" x2="672" y2="212" stroke="#F0862B" stroke-width="2" marker-end="url(#arrowOrange)"/>
+  <text x="588" y="238" font-size="11" fill="#F5A35C">model requests</text>
+
+  <!-- Providers -> Core -->
+  <line x1="672" y1="262" x2="576" y2="330" stroke="#8B5CF6" stroke-width="2" marker-end="url(#arrowViolet)"/>
+  <text x="584" y="322" font-size="11" fill="#C4A9FF">responses &amp; tool plans</text>
+
+  <!-- Core -> MCP Server -->
+  <line x1="576" y1="420" x2="672" y2="396" stroke="#38BDF8" stroke-width="2" marker-end="url(#arrowSky)"/>
+  <text x="584" y="394" font-size="11" fill="#9AA4BF">expose 21 tools</text>
+
+  <!-- MCP Server -> OpenCode -->
+  <line x1="782" y1="422" x2="782" y2="464" stroke="#38BDF8" stroke-width="2" marker-end="url(#arrowSky)"/>
+  <line x1="808" y1="464" x2="808" y2="422" stroke="#98D85B" stroke-width="2" marker-end="url(#arrowSky)"/>
+  <text x="824" y="448" font-size="11" fill="#9AA4BF">MCP tool</text>
+  <text x="824" y="462" font-size="11" fill="#9AA4BF">calls</text>
+
+  <!-- Assets -> Core -->
+  <line x1="330" y1="548" x2="330" y2="504" stroke="#F0862B" stroke-width="2" marker-end="url(#arrowOrange)"/>
+  <text x="344" y="530" font-size="11" fill="#F5A35C">asset search &amp; import</text>
+</svg>
